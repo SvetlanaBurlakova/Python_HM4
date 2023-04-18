@@ -7,8 +7,10 @@
 которое может собрать за один заход собирающий модуль, находясь перед некоторым кустом заданной во входном файле грядки.
 4 -> 1 2 3 4
 9"""
+from random import randint
 n =int(input('Введите кол-во кустов: '))
-berries = [int(b) for b in input().split()]
+berries = [randint(0,10) for _ in range(n)]
+print(*berries)
 max_num = 0
 for i in range(len(berries)-1):
     if berries[i-1] + berries[i] + berries[i+1] > max_num:
