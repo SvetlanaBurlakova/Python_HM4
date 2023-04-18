@@ -12,7 +12,9 @@ Output - 6 12
 n, m  = int(input('Введите кол-во элементов в первом наборе: ')), int(input('Введите кол-во элементов во втором наборе: '))
 first_list = [int(num) for num in input().split()]
 second_list = [int(num) for num in input().split()]
+
 first_set = set(first_list)
 second_set = set(second_list)
+
 print(*sorted(first_set.intersection(second_set)))
 
